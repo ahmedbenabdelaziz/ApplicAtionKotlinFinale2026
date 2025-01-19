@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer (Simule un box-shadow) -->
+    <item>
+        <shape>
+            <solid android:color="#80000000" /> <!-- Ombre (couleur gris foncé transparent) -->
+            <corners android:radius="12dp" /> <!-- Coins arrondis -->
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+
+    <!-- Background Layer -->
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Couleur de fond -->
+            <corners android:radius="12dp" /> <!-- Coins arrondis -->
+        </shape>
+    </item>
+</layer-list>

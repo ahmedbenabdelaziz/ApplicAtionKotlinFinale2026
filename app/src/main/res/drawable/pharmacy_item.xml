@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp"
+    tools:context=".Pharmaciee">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Pharmacy Image -->
+        <ImageView
+            android:id="@+id/pharmacyImage"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mac"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+        <!-- Pharmacy Details -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/pharmacyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy Name"
+                android:textSize="14sp"
+                android:textColor="#0099E5"/>
+
+            <TextView
+                android:id="@+id/pharmacyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy Address"
+                android:textSize="12sp"
+                android:textColor="#7A7A7A"/>
+
+            <TextView
+                android:id="@+id/pharmacyStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Open Now"
+                android:textSize="12sp"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:id="@+id/pharmacyRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="12sp"
+                android:textColor="#FFB74D"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top Illustration -->
+    <ImageView
+        android:id="@+id/verification_code_illustration"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tth" />
+
+    <!-- Content Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/verification_code_illustration"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify Your Identity"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter the 6-digit code sent to your email or phone number."
+                android:textColor="#6E6E6E"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- OTP Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:textSize="18sp"
+                    android:maxLength="1"
+                    android:layout_marginEnd="8dp" />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:textSize="18sp"
+                    android:maxLength="1"
+                    android:layout_marginEnd="8dp" />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:textSize="18sp"
+                    android:maxLength="1"
+                    android:layout_marginEnd="8dp" />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:textSize="18sp"
+                    android:maxLength="1"
+                    android:layout_marginEnd="8dp" />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:textSize="18sp"
+                    android:maxLength="1"
+                    android:layout_marginEnd="8dp" />
+
+                <!-- Repeat for the remaining digits -->
+
+            </LinearLayout>
+
+            <!-- Verify Button -->
+            <Button
+                android:id="@+id/btn_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Verify Code"
+                android:backgroundTint="#4491F9"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Resend Code -->
+            <TextView
+                android:id="@+id/resend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend Code"
+                android:textColor="#4491F9"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
